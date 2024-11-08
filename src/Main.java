@@ -1,3 +1,8 @@
+import Interfaces.Serviceable;
+import Transports.Bicycle;
+import Transports.Car;
+import Transports.Truck;
+
 public class Main {
     public static void main(String[] args) {
         ServiceStation station = new ServiceStation();

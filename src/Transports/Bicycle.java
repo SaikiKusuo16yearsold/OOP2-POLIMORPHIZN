@@ -1,3 +1,7 @@
+package Transports;
+
+import Interfaces.Serviceable;
+
 public class Bicycle extends Transports implements Serviceable {
 
     public Bicycle(String modelName, int wheelsCount) {

@@ -1,4 +1,6 @@
-public class Transports {
+package Transports;
+
+public abstract class Transports {
     private String modelName;
     private int wheelsCount;
 
@@ -16,4 +18,7 @@ public class Transports {
     }
 
 
+    public void updateTyre() {
+
+    }
 }

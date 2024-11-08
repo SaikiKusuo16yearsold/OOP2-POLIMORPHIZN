@@ -1,3 +1,8 @@
+package Transports;
+
+import Interfaces.EngineCheckable;
+import Interfaces.Serviceable;
+
 public class Car extends Transports implements Serviceable, EngineCheckable {
 
 

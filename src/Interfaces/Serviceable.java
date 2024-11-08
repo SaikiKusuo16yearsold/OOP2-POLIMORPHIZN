@@ -1,11 +1,11 @@
+package Interfaces;
+
 public interface Serviceable {
     String getModelName();
 
-    default void updateTyre(){
+    default void updateTyre() {
         System.out.println("Меняем покрышку");
-    };
-
-    int getWheelsCount();
+    }
 
 
 }
