@@ -1,13 +1,19 @@
 package Transports;
 
-import Interfaces.EngineCheckable;
 import Interfaces.Serviceable;
-import Interfaces.TrailerCheckable;
 
-public class Truck extends Transports implements Serviceable, EngineCheckable, TrailerCheckable {
+public class Truck extends Transports implements Serviceable {
 
 
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
+    }
+
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
+    }
+
+    public void checkTrailer() {
+        System.out.println("Проверяем прицеп");
     }
 }

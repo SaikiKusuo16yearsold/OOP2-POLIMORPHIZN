@@ -19,6 +19,6 @@ public abstract class Transports {
 
 
     public void updateTyre() {
-
+        System.out.println("Меняем покрышку");
     }
 }

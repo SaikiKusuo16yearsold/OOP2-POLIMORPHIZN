@@ -1,14 +1,17 @@
 package Transports;
 
-import Interfaces.EngineCheckable;
 import Interfaces.Serviceable;
 
-public class Car extends Transports implements Serviceable, EngineCheckable {
+public class Car extends Transports implements Serviceable {
 
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
 
+    }
+
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
     }
 
 
