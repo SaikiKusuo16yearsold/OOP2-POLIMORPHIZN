@@ -8,5 +8,7 @@ public class Bicycle extends Transports implements Serviceable {
         super(modelName, wheelsCount);
     }
 
-
+    public void service(Transports transport) {
+        super.service(transport);
+    }
 }

@@ -3,7 +3,7 @@ import Transports.Transports;
 
 
 public class ServiceStation implements Serviceable {
-    public void check(Transports transport) {
-        service(transport);
+    public void service(Transports transport) {
+        transport.service(transport);
     }
 }

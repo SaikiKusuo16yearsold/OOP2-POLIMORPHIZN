@@ -1,6 +1,9 @@
 package Transports;
 
-public abstract class Transports {
+import Interfaces.Serviceable;
+
+
+public abstract class Transports implements Serviceable {
     private String modelName;
     private int wheelsCount;
 
@@ -20,5 +23,11 @@ public abstract class Transports {
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
+    }
+
+    public void service(Transports transport) {
+        for (int i = 0; i < transport.getWheelsCount(); i++) {
+            transport.updateTyre();
+        }
     }
 }

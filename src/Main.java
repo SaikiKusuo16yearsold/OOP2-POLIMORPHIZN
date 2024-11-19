@@ -17,12 +17,12 @@ public class Main {
 
         Serviceable[] transport = {car, car2, truck, truck2, bicycle, bicycle2};
 
-        station.check(truck);
-        station.check(truck2);
-        station.check(bicycle);
-        station.check(bicycle2);
-        station.check(car);
-        station.check(car2);
+        station.service(truck);
+        station.service(truck2);
+        station.service(bicycle);
+        station.service(bicycle2);
+        station.service(car);
+        station.service(car2);
 
     }
 }

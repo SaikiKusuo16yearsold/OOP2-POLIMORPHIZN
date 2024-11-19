@@ -16,4 +16,11 @@ public class Truck extends Transports implements Serviceable {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+
+    @Override
+    public void service(Transports transport) {
+        super.service(transport);
+        checkEngine();
+        checkTrailer();
+    }
 }
